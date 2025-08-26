@@ -1,21 +1,38 @@
 package entity;
 
 public class Team {
-	
+
 	private int id;
-	
+
 	private String teamName;
-	
+
 	private String captainName;
-	
+
 	private String coachName;
-	
+
 	private float nRR;
-	
+
 	private boolean isQualified;
 
-	
-	//setter-getter
+	private String shortName;
+
+	public String getShortName() {
+		return shortName;
+	}
+
+	public void setShortName(String shortName) {
+		this.shortName = shortName;
+	}
+
+	// toString() - >converts object toString
+	// right click -> source -> generate toString()
+	@Override
+	public String toString() {
+		return "Team [id=" + id + ", teamName=" + teamName + ", captainName=" + captainName + ", coachName=" + coachName
+				+ ", nRR=" + nRR + ", isQualified=" + isQualified + ", shortName=" + shortName + "]";
+	}
+
+	// setter-getter
 	public int getId() {
 		return id;
 	}
